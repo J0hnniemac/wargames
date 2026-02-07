@@ -38,17 +38,10 @@ python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 
 # Install dependencies
-pip install pygame pyshp geographiclib numpy pillow
+pip install -r requirements.txt
 ```
 
-### Download Map Data
-
-Download the Natural Earth 110m shapefiles:
-
-1. [Coastlines](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/physical/ne_110m_coastline.zip)
-2. [Countries](https://www.naturalearthdata.com/http//www.naturalearthdata.com/download/110m/cultural/ne_110m_admin_0_countries.zip)
-
-Extract both zip files into the project directory.
+The Natural Earth shapefiles are included in the repository.
 
 ## Usage
 
@@ -99,8 +92,14 @@ MIT License - feel free to use, modify, and distribute.
 ## Acknowledgments
 
 - **WarGames (1983)** - MGM/UA Entertainment
-- **Natural Earth** - Public domain map data
+- **[Natural Earth](https://www.naturalearthdata.com/)** - Free vector and raster map data in the public domain. This project uses the 1:110m Cultural Vectors (Admin 0 – Countries) and Physical Vectors (Coastline). Natural Earth is supported by NACIS and contributors worldwide.
 - The WOPR, for teaching us that the only winning move is not to play
+
+## Map Data License
+
+The Natural Earth shapefiles included in this repository are in the **public domain**. From [naturalearthdata.com](https://www.naturalearthdata.com/about/terms-of-use/):
+
+> "All versions of Natural Earth raster + vector map data found on this website are in the public domain. You may use the maps in any manner, including modifying the content and design, electronic dissemination, and offset printing. No permission is needed to use Natural Earth."
 
 ---
 
