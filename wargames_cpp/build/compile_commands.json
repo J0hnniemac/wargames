@@ -1,0 +1,44 @@
+[
+{
+  "directory": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/build",
+  "command": "/usr/bin/c++  -I/Users/johnmcmanus/Dev/wargames/wargames_cpp/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -I/opt/homebrew/include -isystem /opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2 -std=gnu++17 -arch arm64 -o CMakeFiles/wargames_cpp.dir/src/Aircraft.cpp.o -c /Users/johnmcmanus/Dev/wargames/wargames_cpp/src/Aircraft.cpp",
+  "file": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/src/Aircraft.cpp",
+  "output": "CMakeFiles/wargames_cpp.dir/src/Aircraft.cpp.o"
+},
+{
+  "directory": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/build",
+  "command": "/usr/bin/c++  -I/Users/johnmcmanus/Dev/wargames/wargames_cpp/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -I/opt/homebrew/include -isystem /opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2 -std=gnu++17 -arch arm64 -o CMakeFiles/wargames_cpp.dir/src/Explosion.cpp.o -c /Users/johnmcmanus/Dev/wargames/wargames_cpp/src/Explosion.cpp",
+  "file": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/src/Explosion.cpp",
+  "output": "CMakeFiles/wargames_cpp.dir/src/Explosion.cpp.o"
+},
+{
+  "directory": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/build",
+  "command": "/usr/bin/c++  -I/Users/johnmcmanus/Dev/wargames/wargames_cpp/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -I/opt/homebrew/include -isystem /opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2 -std=gnu++17 -arch arm64 -o CMakeFiles/wargames_cpp.dir/src/Missile.cpp.o -c /Users/johnmcmanus/Dev/wargames/wargames_cpp/src/Missile.cpp",
+  "file": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/src/Missile.cpp",
+  "output": "CMakeFiles/wargames_cpp.dir/src/Missile.cpp.o"
+},
+{
+  "directory": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/build",
+  "command": "/usr/bin/c++  -I/Users/johnmcmanus/Dev/wargames/wargames_cpp/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -I/opt/homebrew/include -isystem /opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2 -std=gnu++17 -arch arm64 -o CMakeFiles/wargames_cpp.dir/src/Renderer.cpp.o -c /Users/johnmcmanus/Dev/wargames/wargames_cpp/src/Renderer.cpp",
+  "file": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/src/Renderer.cpp",
+  "output": "CMakeFiles/wargames_cpp.dir/src/Renderer.cpp.o"
+},
+{
+  "directory": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/build",
+  "command": "/usr/bin/c++  -I/Users/johnmcmanus/Dev/wargames/wargames_cpp/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -I/opt/homebrew/include -isystem /opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2 -std=gnu++17 -arch arm64 -o CMakeFiles/wargames_cpp.dir/src/VectorMap.cpp.o -c /Users/johnmcmanus/Dev/wargames/wargames_cpp/src/VectorMap.cpp",
+  "file": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/src/VectorMap.cpp",
+  "output": "CMakeFiles/wargames_cpp.dir/src/VectorMap.cpp.o"
+},
+{
+  "directory": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/build",
+  "command": "/usr/bin/c++  -I/Users/johnmcmanus/Dev/wargames/wargames_cpp/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -I/opt/homebrew/include -isystem /opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2 -std=gnu++17 -arch arm64 -o CMakeFiles/wargames_cpp.dir/src/main.cpp.o -c /Users/johnmcmanus/Dev/wargames/wargames_cpp/src/main.cpp",
+  "file": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/src/main.cpp",
+  "output": "CMakeFiles/wargames_cpp.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/build",
+  "command": "/usr/bin/cc  -I/Users/johnmcmanus/Dev/wargames/wargames_cpp/include -I/opt/homebrew/Cellar/sdl2/2.32.2/include -F/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks -I/opt/homebrew/include -isystem /opt/homebrew/Cellar/sdl2/2.32.2/include/SDL2  -arch arm64 -o CMakeFiles/wargames_cpp.dir/src/gl.c.o -c /Users/johnmcmanus/Dev/wargames/wargames_cpp/src/gl.c",
+  "file": "/Users/johnmcmanus/Dev/wargames/wargames_cpp/src/gl.c",
+  "output": "CMakeFiles/wargames_cpp.dir/src/gl.c.o"
+}
+]

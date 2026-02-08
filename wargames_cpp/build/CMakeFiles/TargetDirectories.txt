@@ -1,0 +1,3 @@
+/Users/johnmcmanus/Dev/wargames/wargames_cpp/build/CMakeFiles/wargames_cpp.dir
+/Users/johnmcmanus/Dev/wargames/wargames_cpp/build/CMakeFiles/edit_cache.dir
+/Users/johnmcmanus/Dev/wargames/wargames_cpp/build/CMakeFiles/rebuild_cache.dir
