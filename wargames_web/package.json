@@ -1,0 +1,22 @@
+{
+  "name": "wargames-web",
+  "version": "1.0.0",
+  "description": "WarGames Global Thermonuclear War Simulation - Multi-screen WebGL Implementation",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "python3 -m http.server 8080",
+    "convert-data": "node scripts/convert-shapefiles.js"
+  },
+  "keywords": [
+    "wargames",
+    "webgl",
+    "simulation",
+    "visualization"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "shapefile": "^0.6.6"
+  }
+}

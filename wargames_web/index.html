@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARGAMES - Global Thermonuclear War Simulation</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="loading-text">INITIALIZING WOPR SYSTEM</div>
+        <div class="loading-bar">
+            <div class="loading-progress" id="loading-progress"></div>
+        </div>
+        <div class="loading-status" id="loading-status">Loading assets...</div>
+    </div>
+
+    <div id="screen-grid" class="screen-grid">
+        <!-- Canvas elements will be dynamically created here -->
+    </div>
+
+    <div id="timestamp" class="timestamp">00:00:00</div>
+
+    <!-- Load external libraries -->
+    <script src="lib/turf.min.js"></script>
+    
+    <!-- Load source modules -->
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+{
+  "screenTypes": {
+    "GLOBAL_MAP": "global",
+    "NORTH_AMERICA": "regional",
+    "EUROPE": "regional",
+    "ASIA": "regional",
+    "PACIFIC": "regional",
+    "STATUS_PANEL": "status",
+    "RADAR": "radar",
+    "TARGET_LIST": "targets",
+    "TICTACTOE": "tictactoe",
+    "DEFCON_STATUS": "defcon"
+  },
+  "layouts": {
+    "mobile": [
+      {
+        "type": "GLOBAL_MAP",
+        "label": "GLOBAL MAP"
+      }
+    ],
+    "tablet": [
+      {
+        "type": "GLOBAL_MAP",
+        "label": "GLOBAL MAP"
+      },
+      {
+        "type": "NORTH_AMERICA",
+        "label": "NORTH AMERICA",
+        "centerLat": 40,
+        "centerLon": -100,
+        "zoom": 2.5
+      },
+      {
+        "type": "EUROPE",
+        "label": "EUROPE/RUSSIA",
+        "centerLat": 55,
+        "centerLon": 37,
+        "zoom": 3
+      },
+      {
+        "type": "STATUS_PANEL",
+        "label": "SYSTEM STATUS"
+      }
+    ],
+    "desktop": [
+      {
+        "type": "GLOBAL_MAP",
+        "label": "GLOBAL MAP"
+      },
+      {
+        "type": "NORTH_AMERICA",
+        "label": "NORTH AMERICA",
+        "centerLat": 40,
+        "centerLon": -100,
+        "zoom": 2.5
+      },
+      {
+        "type": "EUROPE",
+        "label": "EUROPE/RUSSIA",
+        "centerLat": 55,
+        "centerLon": 37,
+        "zoom": 3
+      },
+      {
+        "type": "ASIA",
+        "label": "ASIA-PACIFIC",
+        "centerLat": 35,
+        "centerLon": 140,
+        "zoom": 3
+      },
+      {
+        "type": "PACIFIC",
+        "label": "PACIFIC OCEAN",
+        "centerLat": 0,
+        "centerLon": -160,
+        "zoom": 2
+      },
+      {
+        "type": "STATUS_PANEL",
+        "label": "SYSTEM STATUS"
+      },
+      {
+        "type": "DEFCON_STATUS",
+        "label": "DEFCON STATUS"
+      },
+      {
+        "type": "TARGET_LIST",
+        "label": "TARGET STATUS"
+      },
+      {
+        "type": "TICTACTOE",
+        "label": "TACTICAL ANALYSIS"
+      }
+    ],
+    "large": [
+      {
+        "type": "GLOBAL_MAP",
+        "label": "GLOBAL MAP"
+      },
+      {
+        "type": "NORTH_AMERICA",
+        "label": "NORTH AMERICA",
+        "centerLat": 40,
+        "centerLon": -100,
+        "zoom": 2.5
+      },
+      {
+        "type": "EUROPE",
+        "label": "EUROPE/RUSSIA",
+        "centerLat": 55,
+        "centerLon": 37,
+        "zoom": 3
+      },
+      {
+        "type": "ASIA",
+        "label": "ASIA-PACIFIC",
+        "centerLat": 35,
+        "centerLon": 140,
+        "zoom": 3
+      },
+      {
+        "type": "PACIFIC",
+        "label": "PACIFIC OCEAN",
+        "centerLat": 0,
+        "centerLon": -160,
+        "zoom": 2
+      },
+      {
+        "type": "STATUS_PANEL",
+        "label": "SYSTEM STATUS"
+      },
+      {
+        "type": "RADAR",
+        "label": "THREAT DETECTION"
+      },
+      {
+        "type": "TARGET_LIST",
+        "label": "TARGET STATUS"
+      },
+      {
+        "type": "NORTH_AMERICA",
+        "label": "SUB-LAUNCH DETECTION",
+        "centerLat": 40,
+        "centerLon": -75,
+        "zoom": 4
+      },
+      {
+        "type": "GLOBAL_MAP",
+        "label": "MISSILE WARNING"
+      },
+      {
+        "type": "STATUS_PANEL",
+        "label": "LAUNCH SEQUENCE"
+      },
+      {
+        "type": "RADAR",
+        "label": "EARLY WARNING"
+      }
+    ],
+    "ultrawide": [
+      {
+        "type": "GLOBAL_MAP",
+        "label": "GLOBAL MAP"
+      },
+      {
+        "type": "NORTH_AMERICA",
+        "label": "NORTH AMERICA",
+        "centerLat": 40,
+        "centerLon": -100,
+        "zoom": 2.5
+      },
+      {
+        "type": "EUROPE",
+        "label": "EUROPE/RUSSIA",
+        "centerLat": 55,
+        "centerLon": 37,
+        "zoom": 3
+      },
+      {
+        "type": "ASIA",
+        "label": "ASIA-PACIFIC",
+        "centerLat": 35,
+        "centerLon": 140,
+        "zoom": 3
+      },
+      {
+        "type": "PACIFIC",
+        "label": "PACIFIC OCEAN",
+        "centerLat": 0,
+        "centerLon": -160,
+        "zoom": 2
+      },
+      {
+        "type": "STATUS_PANEL",
+        "label": "SYSTEM STATUS"
+      },
+      {
+        "type": "RADAR",
+        "label": "THREAT DETECTION"
+      },
+      {
+        "type": "TARGET_LIST",
+        "label": "TARGET STATUS"
+      },
+      {
+        "type": "NORTH_AMERICA",
+        "label": "SUB-LAUNCH DETECTION",
+        "centerLat": 40,
+        "centerLon": -75,
+        "zoom": 4
+      },
+      {
+        "type": "GLOBAL_MAP",
+        "label": "MISSILE WARNING"
+      },
+      {
+        "type": "STATUS_PANEL",
+        "label": "LAUNCH SEQUENCE"
+      },
+      {
+        "type": "RADAR",
+        "label": "EARLY WARNING"
+      },
+      {
+        "type": "EUROPE",
+        "label": "EUROPEAN THEATER",
+        "centerLat": 50,
+        "centerLon": 10,
+        "zoom": 4
+      },
+      {
+        "type": "ASIA",
+        "label": "EAST ASIA",
+        "centerLat": 40,
+        "centerLon": 120,
+        "zoom": 4
+      },
+      {
+        "type": "TARGET_LIST",
+        "label": "DEFCON STATUS"
+      },
+      {
+        "type": "STATUS_PANEL",
+        "label": "WOPR ANALYSIS"
+      }
+    ]
+  }
+}

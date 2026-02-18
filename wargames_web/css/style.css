@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: 'Courier New', monospace;
+    overflow: hidden;
+    color: #0ff;
+}
+
+/* Loading Screen */
+#loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#loading-screen.hidden {
+    display: none;
+}
+
+.loading-text {
+    font-size: 24px;
+    color: #0ff;
+    text-shadow: 0 0 10px #0ff;
+    margin-bottom: 30px;
+    letter-spacing: 4px;
+}
+
+.loading-bar {
+    width: 400px;
+    height: 4px;
+    background-color: #003;
+    border: 1px solid #0ff;
+    position: relative;
+}
+
+.loading-progress {
+    height: 100%;
+    background-color: #0ff;
+    box-shadow: 0 0 10px #0ff;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.loading-status {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #0aa;
+}
+
+/* Screen Grid Container */
+.screen-grid {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    gap: 8px;
+    padding: 8px;
+    background-color: #000;
+}
+
+/* Default: Mobile/Small screens - 1 column */
+@media (max-width: 767px) {
+    .screen-grid {
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(200px, 1fr);
+    }
+}
+
+/* Tablet: 2x2 grid */
+@media (min-width: 768px) and (max-width: 1279px) {
+    .screen-grid {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+/* Desktop: 3x3 grid */
+@media (min-width: 1280px) and (max-width: 1919px) {
+    .screen-grid {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/* Large Desktop: 4x3 grid */
+@media (min-width: 1920px) and (max-width: 2559px) {
+    .screen-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+}
+
+/* Ultra-wide: 4x4 grid */
+@media (min-width: 2560px) {
+    .screen-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+/* Individual Screen Container */
+.screen-container {
+    position: relative;
+    background-color: #000;
+    border: 2px solid #0ff;
+    box-shadow: 
+        0 0 10px #0ff,
+        inset 0 0 20px rgba(0, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.screen-container canvas {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000;
+}
+
+/* Screen Label */
+.screen-label {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    font-size: 11px;
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+    letter-spacing: 2px;
+    z-index: 10;
+    pointer-events: none;
+    font-weight: bold;
+}
+
+/* Status Text Overlay (for status panels) */
+.screen-status {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    right: 10px;
+    font-size: 10px;
+    color: #0ff;
+    text-shadow: 0 0 3px #0ff;
+    line-height: 1.6;
+    z-index: 10;
+    pointer-events: none;
+    font-family: 'Courier New', monospace;
+}
+
+/* Timestamp Display */
+.timestamp {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    font-size: 16px;
+    color: #0ff;
+    text-shadow: 0 0 8px #0ff;
+    z-index: 100;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Radar-specific styling */
+.screen-container.radar {
+    background: radial-gradient(circle, #001 0%, #000 70%);
+}
+
+/* Target list styling */
+.screen-container.target-list {
+    overflow-y: auto;
+}
+
+.screen-container.target-list::-webkit-scrollbar {
+    width: 8px;
+}
+
+.screen-container.target-list::-webkit-scrollbar-track {
+    background: #001;
+}
+
+.screen-container.target-list::-webkit-scrollbar-thumb {
+    background: #0ff;
+    box-shadow: 0 0 5px #0ff;
+}
+
+/* Fullscreen mode for individual screen */
+.screen-container.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 500;
+    border-width: 4px;
+}
+
+/* Animation for screen flicker */
+@keyframes flicker {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.97; }
+}
+
+.screen-container {
+    animation: flicker 0.15s infinite;
+}

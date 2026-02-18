@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wargames Test</title>
+    <style>
+        body {
+            background: #000;
+            color: #0ff;
+            font-family: 'Courier New', monospace;
+            padding: 20px;
+        }
+        #test-results { line-height: 1.8; }
+        .pass { color: #0f0; }
+        .fail { color: #f00; }
+    </style>
+</head>
+<body>
+    <h1>Wargames Web - System Test</h1>
+    <div id="test-results"></div>
+    
+    <script src="lib/turf.min.js"></script>
+    <script>
+        const results = [];
+        
+        // Test 1: Check if turf is loaded
+        if (typeof turf !== 'undefined') {
+            results.push('✓ turf.js loaded successfully');
+            
+            // Test turf functionality
+            try {
+                const point1 = turf.point([0, 0]);
+                const point2 = turf.point([10, 10]);
+                const line = turf.greatCircle(point1, point2);
+                results.push('✓ turf.js great circle calculation works');
+            } catch (e) {
+                results.push('✗ turf.js error: ' + e.message);
+            }
+        } else {
+            results.push('✗ turf.js not loaded');
+        }
+        
+        // Test 2: Check if fetch works
+        fetch('data/targets.json')
+            .then(r => r.json())
+            .then(data => {
+                results.push('✓ targets.json loaded: ' + data.cities.length + ' cities');
+                results.push('✓ Submarine positions: ' + data.submarines.length);
+                updateResults();
+            })
+            .catch(e => {
+                results.push('✗ Failed to load targets.json: ' + e.message);
+                updateResults();
+            });
+        
+        // Test 3: Check shapefiles
+        fetch('data/ne_110m_coastline.json')
+            .then(r => r.json())
+            .then(data => {
+                results.push('✓ Coastline data loaded: ' + data.features.length + ' features');
+                updateResults();
+            })
+            .catch(e => {
+                results.push('✗ Failed to load coastline: ' + e.message);
+                updateResults();
+            });
+        
+        // Test 4: Check WebGL
+        const canvas = document.createElement('canvas');
+        const gl = canvas.getContext('webgl');
+        if (gl) {
+            results.push('✓ WebGL supported');
+            results.push('  Renderer: ' + gl.getParameter(gl.RENDERER));
+            results.push('  Vendor: ' + gl.getParameter(gl.VENDOR));
+        } else {
+            results.push('✗ WebGL not supported');
+        }
+        
+        function updateResults() {
+            document.getElementById('test-results').innerHTML = 
+                results.map(r => {
+                    if (r.startsWith('✓')) return '<span class="pass">' + r + '</span>';
+                    if (r.startsWith('✗')) return '<span class="fail">' + r + '</span>';
+                    return r;
+                }).join('<br>');
+        }
+        
+        updateResults();
+    </script>
+</body>
+</html>

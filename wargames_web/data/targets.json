@@ -1,0 +1,230 @@
+{
+  "cities": [
+    {
+      "lat": 55.7558,
+      "lon": 37.6173,
+      "name": "Moscow"
+    },
+    {
+      "lat": 39.9042,
+      "lon": 116.4074,
+      "name": "Beijing"
+    },
+    {
+      "lat": 35.6762,
+      "lon": 139.6503,
+      "name": "Tokyo"
+    },
+    {
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "name": "London"
+    },
+    {
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "name": "Paris"
+    },
+    {
+      "lat": 52.52,
+      "lon": 13.405,
+      "name": "Berlin"
+    },
+    {
+      "lat": 38.9072,
+      "lon": -77.0369,
+      "name": "Washington DC"
+    },
+    {
+      "lat": 40.7128,
+      "lon": -74.006,
+      "name": "New York"
+    },
+    {
+      "lat": 34.0522,
+      "lon": -118.2437,
+      "name": "Los Angeles"
+    },
+    {
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "name": "Chicago"
+    },
+    {
+      "lat": 29.7604,
+      "lon": -95.3698,
+      "name": "Houston"
+    },
+    {
+      "lat": 33.4484,
+      "lon": -112.074,
+      "name": "Phoenix"
+    },
+    {
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "name": "San Francisco"
+    },
+    {
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "name": "Seattle"
+    },
+    {
+      "lat": 25.7617,
+      "lon": -80.1918,
+      "name": "Miami"
+    },
+    {
+      "lat": 32.7157,
+      "lon": -117.1611,
+      "name": "San Diego"
+    },
+    {
+      "lat": 42.3601,
+      "lon": -71.0589,
+      "name": "Boston"
+    },
+    {
+      "lat": 39.7392,
+      "lon": -104.9903,
+      "name": "Denver"
+    },
+    {
+      "lat": 45.5152,
+      "lon": -122.6784,
+      "name": "Portland"
+    },
+    {
+      "lat": 30.2672,
+      "lon": -97.7431,
+      "name": "Austin"
+    }
+  ],
+  "westernTargets": [
+    {
+      "lat": 38.9,
+      "lon": -77,
+      "name": "Washington DC"
+    },
+    {
+      "lat": 40.71,
+      "lon": -74,
+      "name": "NYC"
+    },
+    {
+      "lat": 34.05,
+      "lon": -118.24,
+      "name": "LA"
+    },
+    {
+      "lat": 64.13,
+      "lon": -21.89,
+      "name": "Reykjavik"
+    },
+    {
+      "lat": -34.6,
+      "lon": -58.38,
+      "name": "Buenos Aires"
+    }
+  ],
+  "easternTargets": [
+    {
+      "lat": 55.75,
+      "lon": 37.62,
+      "name": "Moscow"
+    },
+    {
+      "lat": 51.5,
+      "lon": -0.12,
+      "name": "London"
+    },
+    {
+      "lat": 35.68,
+      "lon": 139.76,
+      "name": "Tokyo"
+    },
+    {
+      "lat": 39.9,
+      "lon": 116.4,
+      "name": "Beijing"
+    },
+    {
+      "lat": -33.86,
+      "lon": 151.2,
+      "name": "Sydney"
+    },
+    {
+      "lat": 28.61,
+      "lon": 77.21,
+      "name": "Delhi"
+    },
+    {
+      "lat": 59.33,
+      "lon": 18.07,
+      "name": "Stockholm"
+    }
+  ],
+  "submarines": [
+    {
+      "lat": 35,
+      "lon": -45,
+      "name": "North Atlantic"
+    },
+    {
+      "lat": 45,
+      "lon": -30,
+      "name": "Mid Atlantic"
+    },
+    {
+      "lat": 60,
+      "lon": -20,
+      "name": "North Atlantic (Iceland)"
+    },
+    {
+      "lat": 40,
+      "lon": 160,
+      "name": "North Pacific"
+    },
+    {
+      "lat": 25,
+      "lon": -155,
+      "name": "Central Pacific"
+    },
+    {
+      "lat": 50,
+      "lon": -140,
+      "name": "Northeast Pacific"
+    },
+    {
+      "lat": 10,
+      "lon": 65,
+      "name": "Indian Ocean"
+    },
+    {
+      "lat": -30,
+      "lon": 40,
+      "name": "South Indian Ocean"
+    },
+    {
+      "lat": 70,
+      "lon": 40,
+      "name": "Barents Sea"
+    },
+    {
+      "lat": 55,
+      "lon": 170,
+      "name": "Bering Sea"
+    },
+    {
+      "lat": 15,
+      "lon": -60,
+      "name": "Caribbean"
+    },
+    {
+      "lat": -45,
+      "lon": -60,
+      "name": "South Atlantic"
+    }
+  ]
+}
