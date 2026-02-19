@@ -1,0 +1,19 @@
+{
+  "outputDirectory": ".",
+  "headers": [
+    {
+      "source": "/shaders/(.*)",
+      "headers": [
+        { "key": "Content-Type", "value": "text/plain" }
+      ]
+    },
+    {
+      "source": "/data/(.*).json",
+      "headers": [
+        { "key": "Content-Type", "value": "application/json" }
+      ]
+    }
+  ],
+  "rewrites": [],
+  "cleanUrls": true
+}

@@ -248,9 +248,9 @@ export class ScreenManager {
             }
         }
         
-        // End scene (skip post-processing for now to debug map rendering)
+        // End scene and apply post-processing
         renderer.endScene();
-        //renderer.applyPostProcessing(time);
+        renderer.applyPostProcessing(time);
     }
 
     renderStatusPanel(screen, stats) {

@@ -277,9 +277,8 @@ getProjectionMatrix() {
 
     beginScene() {
         const gl = this.gl;
-        // Render directly to screen canvas (bypass FBO for debugging)
-        gl.bindFramebuffer(gl.FRAMEBUFFER, null);
-        this.clear(0, 0.02, 0, 1); // Slightly green-black so we can see it
+        gl.bindFramebuffer(gl.FRAMEBUFFER, this.framebuffers.scene.fbo);
+        this.clear(0, 0, 0, 1);
         gl.blendFunc(gl.SRC_ALPHA, gl.ONE); // Additive blending for glow
     }
 
@@ -300,8 +299,10 @@ getProjectionMatrix() {
         gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
         
         const aPos = program.locations.attributes.aPos;
+        const aTexCoord = program.locations.attributes.aTexCoord;
         gl.enableVertexAttribArray(aPos);
         gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+        if (aTexCoord !== undefined && aTexCoord >= 0) gl.disableVertexAttribArray(aTexCoord);
         
         const projection = this.getProjectionMatrix();
         gl.uniformMatrix4fv(program.locations.uniforms.uProjection, false, projection);
@@ -333,8 +334,10 @@ getProjectionMatrix() {
         gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
         
         const aPos = program.locations.attributes.aPos;
+        const aTexCoord = program.locations.attributes.aTexCoord;
         gl.enableVertexAttribArray(aPos);
         gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+        if (aTexCoord !== undefined && aTexCoord >= 0) gl.disableVertexAttribArray(aTexCoord);
         
         const projection = this.getProjectionMatrix();
         gl.uniformMatrix4fv(program.locations.uniforms.uProjection, false, projection);
@@ -365,8 +368,10 @@ getProjectionMatrix() {
         gl.bufferData(gl.ARRAY_BUFFER, vertices, gl.STATIC_DRAW);
         
         const aPos = program.locations.attributes.aPos;
+        const aTexCoord = program.locations.attributes.aTexCoord;
         gl.enableVertexAttribArray(aPos);
         gl.vertexAttribPointer(aPos, 2, gl.FLOAT, false, 0, 0);
+        if (aTexCoord !== undefined && aTexCoord >= 0) gl.disableVertexAttribArray(aTexCoord);
         
         const projection = this.getProjectionMatrix();
         gl.uniformMatrix4fv(program.locations.uniforms.uProjection, false, projection);
